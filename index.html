@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botão para iniciar conversa no WhatsApp</title>
+</head>
+<body>
+
+	<label for="numero">Digite o número de celular desejado:</label>
+	<input type="text" id="numero" name="numero" value="+5511">
+
+	<button onclick="location.href='https://wa.me/' + document.getElementById('numero').value.replace(/\D/g, '');"
+	style="background-color: green; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px;">Iniciar conversa no WhatsApp</button>
+
+</body>
+</html>
